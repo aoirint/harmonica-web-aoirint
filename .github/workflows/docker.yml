@@ -39,6 +39,7 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           file: ./Dockerfile
           push: true
+          target: runtime-env
           tags: ${{ env.IMAGE_NAME_AND_TAG }}
           build-args: |-
             REACT_APP_API_URL=https://hmapi.aoirint.com/v1/graphql
