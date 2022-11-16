@@ -1,0 +1,7 @@
+server {
+  root /opt/harmonica-web-build;
+
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+}
